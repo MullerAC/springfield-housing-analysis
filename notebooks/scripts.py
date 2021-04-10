@@ -69,7 +69,7 @@ def arima_analyze(data, order, initial=12*15, horizon=12, period=6, forecast_len
         plt.suptitle('ARIMA Models', y=1.03, fontsize=30)
     plt.tight_layout()
     if filename:
-        plt.savefig(f'visualizations/{filename}.png')
+        plt.savefig(f'../visualizations/{filename}.png')
     plt.show()
     
     return forecast_df
@@ -86,7 +86,7 @@ def acf_pacf_charts(df, filename=None):
     plt.tight_layout()
     #fig.subplots_adjust(hspace=.41, wspace=.17)
     if filename:
-        plt.savefig(f'visualizations/{filename}.png')
+        plt.savefig(f'../visualizations/{filename}.png')
     plt.show()
 
 #obsolete: use arima_analyze or arima_cross_validation
